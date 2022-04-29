@@ -21,6 +21,7 @@ export default signup = async(req, res = response) => {
         });
     } catch (error) {
         return res.status(500).json({
+            ok: false,
             message: error.message
         });
     }
